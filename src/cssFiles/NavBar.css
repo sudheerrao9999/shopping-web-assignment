@@ -1,0 +1,46 @@
+.navBody {
+  display: none;
+  flex-direction: row;
+  background-color: #242b2e;
+  height: 50px;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.navforMobile {
+  display: none;
+}
+@media only screen and (min-width: 100px) and (max-width: 1100px) {
+  .navforMobile {
+    display: block;
+  }
+}
+.drobdownButton {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1100px) {
+  .navBody {
+    display: flex;
+  }
+}
+.OrderPopupOnhover {
+  position: relative;
+  z-index: 1;
+}
+
+.OrderPopup {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 400px;
+  background-color: #efefef;
+  display: none;
+  z-index: 10;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+}
